@@ -1,0 +1,5 @@
+{
+  "immediatePerWeek": 2500,
+  "balancedPerWeek": 7500,
+  "maxSimultaneousDistributions": 24
+}
