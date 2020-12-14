@@ -1,5 +1,6 @@
 name: Generate Cred Instance
 on:
+  workflow_dispatch:
   # Trigger on merging to master.
   push:
     branches:
@@ -19,7 +20,7 @@ jobs:
       - name: Cache Data # Cache SourceCred Data, invalidating if any of the config changes or the SC version is updated
         uses: actions/cache@v2
         with:
-          path: '**/cache'
+          path: "**/cache"
           key: SC-${{ runner.os }}-${{ hashFiles('**/config.json', '**/sourcecred.json', '**/yarn.lock') }}
 
       - name: Install Packages 🔧
