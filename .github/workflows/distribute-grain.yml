@@ -1,5 +1,7 @@
 name: Distribute Grain
 on:
+  workflow_dispatch:
+
   # A new Cred interval every Sunday. We'll distribute Grain 5 minutes
   # after the new interval
   schedule:
